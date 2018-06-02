@@ -95,7 +95,7 @@ header {
     height: 734.5px;
     width: 100vw;
     max-width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_header.jpg')center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_header.JPG')center center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -273,54 +273,54 @@ header {
 }
 
 .one {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_one.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_one.JPG');
     background-size: cover;
     background-position: center 40%;
 }
 
 .two {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_two.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background_two.JPG');
     background-size: cover;
 }
 
 .three {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background-three.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background-three.JPG');
     background-size: cover;
     background-position: center 30%;
 }
 
 .container-fluid-szkolenia-left {
-    background: url('images/background_szkolenia.jpg');
+    background: url('images/background_szkolenia.JPG');
     background-size: cover;
 }
 
 .fluid-container-serwis-right {
-    background: url('images/background_serwis.jpg');
+    background: url('images/background_serwis.JPG');
     background-size: cover;
 }
 
 .fluid-container-programowanie-left {
-    background: url('images/background_programowanie.jpg');
+    background: url('images/background_programowanie.JPG');
     background-size: cover;
 }
 
 .fluid-container-modernizacja-right {
-    background: url('images/background_modernizacja.jpg');
+    background: url('images/background_modernizacja.JPG');
     background-size: cover;
 }
 
 .container-fluid-trzpien-left {
-    background: url('images/background_trzpien.jpg');
+    background: url('images/background_trzpien.JPG');
     background-size: cover;
 }
 
 .container-fluid-glowice-right {
-    background: url('images/background_glowice.jpg');
+    background: url('images/background_glowice.JPG');
     background-size: cover;
 }
 
 .container-fluid-mocowania-left {
-    background: url('images/background_mocowanie.jpg');
+    background: url('images/background_mocowanie.JPG');
     background-size: cover;
 }
 
