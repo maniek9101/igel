@@ -11,7 +11,7 @@
     <title>Igel</title>
 </head>
 
-<body onload="mapaStart()">
+<body>
     <header id="home">
         <nav>
             <ul>
@@ -131,7 +131,7 @@
             <div class="container-fluid-trzpien-right-content content-wrap">
                 <p>TRZPIENIE POMIAROWE.</p>
                 <p>W naszej ofercie znajdują się: trzpienie pomiarowe proste, cylindryczne, gwiazdowe, talerzykowe, z końcówką półkulistą, kątowe, z gwintem wewnętrznym oraz trzpienie do sond narzędziowych, z gwintem M2, M3, M4, M5.</p>
-                <a href="www.igel-cmm.com/trzpienie-pomiarowe,52,0.html">link</a>
+                <a target="_blank" href="https://www.onet.pl/">Link</a>
             </div>
         </div>
     </div>
@@ -184,66 +184,62 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid-kontakt-mapa" id="mapka"></div>
+    <div class="container-fluid-kontakt-mapa" id="mapka">
+        <iframe width="100%" height="300px" frameBorder="0" src="http://umap.openstreetmap.fr/en/map/untitled-map_230011?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&datalayers=580631"></iframe>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-        // declare variable
-        var scrollTop = $(".scrollTop");
-
-        $(window).scroll(function() {
-            if ($(window).width() > 768) { //it's work only for desktop screen not mobile device, nav is still opacity.
+        $(document).ready(function() {
             // declare variable
-            var topPos = $(this).scrollTop();
+            var scrollTop = $(".scrollTop");
 
-            // if user scrolls down - show scroll to top button
-            if (topPos > 100) {
-                $('nav').css("background", "black");
-                $('nav').css('opacity', '.8');
+            $(window).scroll(function() {
+                if ($(window).width() > 768) { //it's work only for desktop screen not mobile device, nav is still opacity.
+                    // declare variable
+                    var topPos = $(this).scrollTop();
 
-            } else {
-                $('nav').css("background", "transparent");
-                $('nav').css('opacity', '1');
-            }
-        }
-        }); // scroll END
+                    // if user scrolls down - show scroll to top button
+                    if (topPos > 100) {
+                        $('nav').css("background", "black");
+                        $('nav').css('opacity', '.8');
 
-        //jump
-        $('a').click(function(e) {
+                    } else {
+                        $('nav').css("background", "transparent");
+                        $('nav').css('opacity', '1');
+                    }
+                }
+            }); // scroll END
+
+            //jump
+            $('a').click(function(e) {
                 e.preventDefault();
                 var tmp = e.currentTarget.classList;
 
                 $("html, body").animate({
                     scrollTop: $('#' + tmp[1]).offset().top - $('nav').height()
                 }, 1000);
-        });
+            });
 
+            //*start slider header*//
+            var count = 1;
+            //var i = 1 ;
+            //console.log('first:', count);
+            setInterval(function() {
+                //console.log('before if: ', count);
+                if (count == 3) {
+                    count = 0;
+                    console.log('count ==3 set count->1');
+                }
+                //console.log('set bg on:', count);
+                $('header').attr('class', 'bg' + count);
+                count = count + 1;
+                //console.log('after incrementation: ',count,' i:', i);
+                i = i + 1;
+            }, 8000);
+            //*end slider header*//
 
-
-    });//End document.ready
-
-    function mapaStart()   
-		{   
-			var wspolrzedne = new google.maps.LatLng(52.4017659,16.90298889999997);
-			var opcjeMapy = {
-			  zoom: 15,
-			  center: wspolrzedne,
-			  mapTypeId: google.maps.MapTypeId.ROADMAP
-			};
-			var mapa = new google.maps.Map(document.getElementById("mapka"), opcjeMapy); 
-
-            // stworzenie markera
-				var punkt  = new google.maps.LatLng(52.4017659,16.90298889999997);
-				var opcjeMarkera =
-				{
-					position: punkt,
-					map: mapa,
-					title: "Parkowa 3"
-				}
-				var marker = new google.maps.Marker(opcjeMarkera);
-		}   
-
+        }); //End document.ready
     </script>
 </body>
 
