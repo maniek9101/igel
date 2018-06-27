@@ -368,6 +368,7 @@ header {
     }
     .fluid-container-serwis {
         flex-direction: column-reverse;
+        justify-content: flex-end;
     }
     .fluid-container-serwis-right {
         height: 250px;
@@ -392,14 +393,20 @@ header {
     }
     .fluid-container-modernizacja {
         flex-direction: column-reverse;
+        justify-content: flex-end;
     }
     .container-fluid-glowice {
         flex-direction: column-reverse;
+        justify-content: flex-end;
     }
     .container-fluid-komis {
         flex-direction: column-reverse;
+        justify-content: flex-end;
     }
     .container-fluid-kontakt-informacje {
         flex-direction: column;
+    }
+    .container-fluid-kontakt-informacje-left {
+        height: 250px;
     }
 }
