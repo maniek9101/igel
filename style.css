@@ -351,6 +351,7 @@ header {
     }
     .main-wrap {
         flex-direction: column;
+        align-items: flex-start;
         height: 1000px;
     }
     .content-wrap {
@@ -361,6 +362,42 @@ header {
         min-width: 0;
         width: 100vw;
         height: 500px;
+    }
+    .container-fluid-szkolenia-left {
+        height: 250px;
+    }
+    .fluid-container-serwis {
+        flex-direction: column-reverse;
+    }
+    .fluid-container-serwis-right {
+        height: 250px;
+    }
+    .fluid-container-programowanie-left {
+        height: 250px;
+    }
+    .fluid-container-modernizacja-right {
+        height: 250px;
+    }
+    .container-fluid-trzpien-left {
+        height: 250px;
+    }
+    .container-fluid-glowice-right {
+        height: 250px;
+    }
+    .container-fluid-mocowania-left {
+        height: 250px;
+    }
+    .container-fluid-komis-right {
+        height: 250px;
+    }
+    .fluid-container-modernizacja {
+        flex-direction: column-reverse;
+    }
+    .container-fluid-glowice {
+        flex-direction: column-reverse;
+    }
+    .container-fluid-komis {
+        flex-direction: column-reverse;
     }
     .container-fluid-kontakt-informacje {
         flex-direction: column;
