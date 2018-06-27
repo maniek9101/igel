@@ -357,4 +357,10 @@ header {
         min-width: 100%;
         height: 500px;
     }
+    .container-fluid-header-content p {
+        text-align: center;
+    }
+    .container-fluid-kontakt-informacje {
+        flex-direction: column;
+    }
 }

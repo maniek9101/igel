@@ -222,21 +222,17 @@
             });
 
             //*start slider header*//
-            var count = 1;
-            //var i = 1 ;
-            //console.log('first:', count);
-            setInterval(function() {
-                //console.log('before if: ', count);
-                if (count == 3) {
-                    count = 0;
-                    console.log('count ==3 set count->1');
-                }
-                //console.log('set bg on:', count);
-                $('header').attr('class', 'bg' + count);
-                count = count + 1;
-                //console.log('after incrementation: ',count,' i:', i);
-                i = i + 1;
-            }, 8000);
+            if ($(window).width() > 768) { // it's work only on desktop 
+                var count = 1;
+                setInterval(function() {
+                    if (count == 3) {
+                        count = 0;
+                        console.log('count ==3 set count->1');
+                    }
+                    $('header').attr('class', 'bg' + count);
+                    count = count + 1;
+                }, 8000);
+            }
             //*end slider header*//
 
         }); //End document.ready
