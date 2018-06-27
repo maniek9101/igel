@@ -363,6 +363,17 @@ header {
         width: 100vw;
         height: 500px;
     }
+    .own-head {
+        font-size: 60px;
+        text-align: center;
+        line-height: 90%;
+    }
+    .container-fluid-header-content {
+        text-align: center;
+    }
+    .container-fluid-wstep-content {
+        padding: 25px 15px;
+    }
     .container-fluid-szkolenia-left {
         height: 250px;
     }
@@ -375,6 +386,9 @@ header {
     }
     .fluid-container-programowanie-left {
         height: 250px;
+    }
+    .fluid-container-programowanie-right-content p:nth-of-type(1) {
+        font-size: 34px;
     }
     .fluid-container-modernizacja-right {
         height: 250px;
