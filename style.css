@@ -13,14 +13,14 @@
     margin-bottom: 15px;
     font-family: 'Muli', sans-serif;
     font-size: 18px;
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 .left-or-right-wrap {
     width: 50vw;
     min-width: 50%;
     height: inherit;
-    border: 2px solid green;
+    border: 1px solid green;
 }
 
 .content-wrap {
@@ -28,6 +28,7 @@
     min-width: 640px;
     height: inherit;
     padding-left: 15px;
+    border: 1px solid goldenrod;
 }
 
 .content-wrap p:nth-of-type(1) {
@@ -347,6 +348,17 @@ header {
 @media only screen and (max-width: 768px) {
     nav {
         display: none;
+    }
+    .main-wrap {
+        flex-direction: column;
+    }
+    .content-wrap {
+        min-width: 0;
+        width: 100vw;
+    }
+    .left-or-right-wrap {
+        min-width: 0;
+        width: 100vw;
     }
     .container-fluid-kontakt-informacje {
         flex-direction: column;
