@@ -374,53 +374,40 @@ header {
     .container-fluid-wstep-content {
         padding: 25px 15px;
     }
-    .container-fluid-szkolenia-left {
-        height: 250px;
-    }
-    .fluid-container-serwis {
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-    }
-    .fluid-container-serwis-right {
-        height: 250px;
-    }
-    .fluid-container-programowanie-left {
-        height: 250px;
-    }
     .fluid-container-programowanie-right-content p:nth-of-type(1) {
         font-size: 34px;
     }
-    .fluid-container-modernizacja-right {
+    .container-fluid-mocowania-right-contetn p:nth-of-type(1) {
+        font-size: 42px;
+    }
+    .container-fluid-glowice-left-content p:nth-of-type(1) {
+        font-size: 40px;
+    }
+    .container-fluid-trzpien-right-content p:nth-of-type(1) {
+        font-size: 48px;
+    }
+    .fluid-container-modernizacja-left-content p:nth-of-type(1) {
+        font-size: 42px;
+    }
+    .fluid-container-modernizacja-right,
+    .container-fluid-komis-right,
+    .container-fluid-mocowania-left,
+    .container-fluid-glowice-right,
+    .container-fluid-trzpien-left,
+    .fluid-container-programowanie-left,
+    .fluid-container-serwis-right,
+    .container-fluid-szkolenia-left,
+    .container-fluid-kontakt-informacje-left {
         height: 250px;
     }
-    .container-fluid-trzpien-left {
-        height: 250px;
-    }
-    .container-fluid-glowice-right {
-        height: 250px;
-    }
-    .container-fluid-mocowania-left {
-        height: 250px;
-    }
-    .container-fluid-komis-right {
-        height: 250px;
-    }
-    .fluid-container-modernizacja {
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-    }
-    .container-fluid-glowice {
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-    }
-    .container-fluid-komis {
+    .fluid-container-modernizacja,
+    .container-fluid-glowice,
+    .container-fluid-komis,
+    .fluid-container-serwis {
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
     .container-fluid-kontakt-informacje {
         flex-direction: column;
-    }
-    .container-fluid-kontakt-informacje-left {
-        height: 250px;
     }
 }
