@@ -407,6 +407,42 @@ header {
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
+    .fluid-container-serwis {
+        height: 850px;
+    }
+    .fluid-container-modernizacja {
+        height: 800px;
+    }
+    .fluid-container-modernizacja-right {
+        min-height: 250px;
+    }
+    .fluid-container-programowanie {
+        height: 650px;
+    }
+    .fluid-container-programowanie-left {
+        min-height: 250px;
+    }
+    .container-fluid-trzpien-left {
+        min-height: 250px;
+    }
+    .container-fluid-trzpien {
+        height: 560px;
+    }
+    .container-fluid-glowice {
+        height: 820px;
+    }
+    .container-fluid-mocowania {
+        height: 550px;
+    }
+    .container-fluid-mocowania-left {
+        min-height: 250px;
+    }
+    .container-fluid-komis {
+        height: 550px;
+    }
+    .container-fluid-komis-right {
+        min-height: 250px;
+    }
     .container-fluid-kontakt-informacje {
         flex-direction: column;
     }
