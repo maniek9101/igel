@@ -278,7 +278,7 @@ header {
 }
 
 .container-fluid-kontakt-informacje-left {
-    width: 50vw;
+    width: 100vw;
     max-width: 480px;
     height: 300px;
     background: url('images/background_kontakt.jpg');
