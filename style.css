@@ -13,14 +13,12 @@
     margin-bottom: 15px;
     font-family: 'Muli', sans-serif;
     font-size: 18px;
-    border: 1px solid red;
 }
 
 .left-or-right-wrap {
     width: 50vw;
     min-width: 50%;
     height: inherit;
-    border: 1px solid green;
 }
 
 .content-wrap {
@@ -28,7 +26,6 @@
     min-width: 640px;
     height: inherit;
     padding-left: 15px;
-    border: 1px solid goldenrod;
 }
 
 .content-wrap p:nth-of-type(1) {
@@ -99,7 +96,6 @@ nav ul li a {
     position: fixed;
     top: 0;
     z-index: 3;
-    border: 1px solid red;
 }
 
 .header-nav-mobile {
@@ -282,9 +278,9 @@ header {
 }
 
 .container-fluid-kontakt-informacje-left {
-    width: 100vw;
-    max-width: 640px;
-    height: 400px;
+    width: 50vw;
+    max-width: 480px;
+    height: 300px;
     background: url('images/background_kontakt.jpg');
     background-size: cover;
     background-position: center center;
@@ -311,9 +307,10 @@ header {
     width: 100vw;
     max-width: 100%;
     height: 300px;
-    /*background: url('images/background_mapa.jpg');
+    background: url('images/background_mapa.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: center;*/
+    background-position-y: center;
 }
 
 .own-head {
