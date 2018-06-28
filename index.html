@@ -13,15 +13,25 @@
 
 <body>
     <header id="home">
-        <nav>
-            <ul>
-                <a class="empty home"><img src="images/logo_small_white.png"></a>
-                <li><a class="hover-effect home" href="#home">HOME</a></li>
-                <li><a class="hover-effect uslugi" href="#uslugi">USŁUGI</a></li>
-                <li><a class="hover-effect akcesoria" href="#akcesoria">AKCESORIA CMM</a></li>
-                <li><a class="hover-effect kontakt" href="#kontakt">KONTAKT</a></li>
-            </ul>
-        </nav>
+        <div class="header-nav">
+            <div class="header-nav-mobile">
+                <a class="empty main-page"><img src="images/logo_small_white.png"></a>
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <a class="empty home"><img src="images/logo_small_white.png"></a>
+                    <li><a class="hover-effect home" href="#home">HOME</a></li>
+                    <li><a class="hover-effect uslugi" href="#uslugi">USŁUGI</a></li>
+                    <li><a class="hover-effect akcesoria" href="#akcesoria">AKCESORIA CMM</a></li>
+                    <li><a class="hover-effect kontakt" href="#kontakt">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div>
         <div class="container-fluid-header-content">
             <p><b>USŁUGI POMIAROWE</b></p>
             <p>Accessories CMM</p>
@@ -112,7 +122,6 @@
                 </p>
                 <p>W efekcie przezbrojenia Państwa maszyna jest ponownie w pełni funkcjonalna i działa w oparciu o najnowocześniejsze dostępne na rynku rozwiązania techniczne. Od tej chwili możecie Państwo korzystać z maszyny wykorzystując praktycznie dowolne
                     oprogramowanie dostępne na rynku. Nasza firma zapewnia modernizację (starszych) manualnych oraz CNC maszyn pomiarowych. </p>
-
             </div>
         </div>
         <div class="fluid-container-modernizacja-right left-or-right-wrap"></div>
@@ -210,6 +219,21 @@
                     }
                 }
             }); // scroll END
+
+            //toggle menu class menu
+            $('.header-nav-mobile button, nav ul li a').click(function() {
+                if ($(window).width() < 768) { //mobile version
+                    if ($('nav').hasClass('active')) {
+                        $('nav').removeClass('active');
+                    } else {
+                        $('nav').addClass('active');
+                    }
+                }
+            });
+            //close nav while click in img nav
+            $('.header-nav-mobile a').click(function() {
+                $('nav').removeClass('active');
+            });
 
             //jump
             $('a').click(function(e) {

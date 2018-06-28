@@ -46,6 +46,8 @@ nav {
     justify-content: center;
     position: fixed;
     top: 0;
+    /*dodane*/
+    left: 0;
     z-index: 3;
 }
 
@@ -89,6 +91,49 @@ nav ul li a {
     border-right: 4px solid #e50045;
     transition: all 0.5s;
 }
+
+
+/*wklejone*/
+
+.header-nav {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    border: 1px solid red;
+}
+
+.header-nav-mobile {
+    display: none;
+    height: 50px;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+}
+
+.header-nav-mobile button {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header-nav-mobile button span {
+    width: 45px;
+    height: 5px;
+    background: white;
+    border-radius: 10px;
+}
+
+.header-nav-mobile img {
+    width: 162.5px;
+    height: 66.5px;
+    cursor: pointer;
+}
+
+
+/*koniec wklejenia*/
 
 header {
     height: 734.5px;
@@ -345,9 +390,53 @@ header {
     background-position-y: center;
 }
 
+.active {
+    top: 50px;
+    display: block;
+}
+
 @media only screen and (max-width: 768px) {
+    .header-nav {
+        background: transparent;
+    }
+    .header-nav-mobile {
+        display: block;
+        background: black;
+    }
+    .header-nav-mobile img {
+        width: 122px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .header-nav-mobile button {
+        right: 10px;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        background: transparent;
+        border: none;
+    }
+    .header-nav-mobile button:focus {
+        outline: none;
+    }
     nav {
         display: none;
+        background: black;
+        opacity: .8;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav a img {
+        display: none;
+    }
+    nav ul li {
+        width: 100%;
+        background: black;
+        border-bottom: 1px solid #e50045;
+    }
+    nav ul li a {
+        border: none;
     }
     .main-wrap {
         flex-direction: column;
